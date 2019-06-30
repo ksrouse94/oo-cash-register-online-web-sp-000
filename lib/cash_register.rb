@@ -1,6 +1,6 @@
 class CashRegister
   
-  attr_accessor :total, :discount, :item, :price, :quantity
+  attr_accessor :total, :discount, :items, :price, :quantity
   
   @@items = []
   
