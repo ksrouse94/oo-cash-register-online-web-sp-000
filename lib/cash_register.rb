@@ -31,6 +31,11 @@ class CashRegister
   def items
     self.add_item(@item, @price, @quantity)
     
+    if @quantity == 1
+      @@items << @item
+    else 
+      @@items.fill(@item, @@items.size, @quantity)
+    
     @@items << @item
   end  
 end  
