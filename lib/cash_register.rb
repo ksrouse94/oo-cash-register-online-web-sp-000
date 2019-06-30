@@ -35,6 +35,7 @@ class CashRegister
       @@items << @item
     else 
       @@items.fill(@item, @@items.size, @quantity)
+    end  
     
     @@items << @item
   end  
